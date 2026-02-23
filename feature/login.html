@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인 | EPIK HIGH</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/form.css" />
   </head>
   <body>
-    <div id="login">
+    <div id="login" class="form-skin">
       <h2>로그인</h2>
 
       <form action="#">
@@ -20,12 +23,14 @@
         </div>
 
         <!-- <button type="submit">로그인</button> -->
-        <a href="/" class="">로그인</a>
+        <div class="form-submit">
+          <a href="/" class="btn-primary">로그인</a>
+        </div>
       </form>
 
       <div id="yetMember">
         <p>아직 회원이 아니신가요?</p>
-        <a href="./register.html">회원가입</a>
+        <a href="./register.html" class="btn-primary">회원가입</a>
       </div>
     </div>
   </body>
