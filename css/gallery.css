@@ -1,0 +1,182 @@
+.gallery-page {
+    --g-bg: #f3f3f3;
+    --g-surface: #ffffff;
+    --g-text: #111827;       
+    --g-muted: #6b7280;        
+    --g-line: #e5e7eb;         
+    --g-shadow: 0 10px 26px rgba(17, 24, 39, 0.08);
+    --g-radius: 16px;
+  }
+  
+  body.gallery-page {
+    margin: 0;
+    background: var(--g-bg);
+    color: var(--g-text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR",
+      "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.5;
+  }
+  
+  .gallery-page .container {
+    width: 92%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .gallery-page .page {
+    padding: 110px 0 80px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .gallery-page #photos-title,
+  .gallery-page #videos-title {
+    scroll-margin-top: 130px;
+  }
+  
+  /* Page Head */
+  .gallery-page .page-head {
+    padding: 6px 0 22px;
+  }
+  
+  .gallery-page .page-title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+  }
+  
+  .gallery-page .page-desc {
+    margin: 10px 0 0;
+    color: var(--g-muted);
+  }
+  
+  /* Sections */
+  .gallery-page .section {
+    padding: 44px 0;
+  }
+  
+  .gallery-page .section + .section {
+    border-top: 1px solid var(--g-line);
+  }
+  
+  .gallery-page .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  
+  .gallery-page .section-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  
+  .gallery-page .section-sub {
+    margin: 0;
+    font-size: 14px;
+    color: var(--g-muted);
+  }
+  
+  .gallery-page .hint {
+    margin: 14px 0 0;
+    font-size: 13px;
+    color: var(--g-muted);
+  }
+  
+  /* Photo Grid */
+  .gallery-page .photo-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  .gallery-page .photo-card {
+    display: block;
+    border: 1px solid var(--g-line);
+    border-radius: var(--g-radius);
+    overflow: hidden;
+    background: var(--g-surface);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .gallery-page .photo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--g-shadow);
+  }
+  
+  .gallery-page .photo-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Video Grid */
+  .gallery-page .video-grid {
+    display: grid;
+    gap: 28px;
+    margin-top: 18px;
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+  }
+  
+  .gallery-page .video-card {
+    border: 1px solid var(--g-line);
+    border-radius: var(--g-radius);
+    overflow: hidden;
+    background: var(--g-surface);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .gallery-page .video-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--g-shadow);
+  }
+  
+  .gallery-page .video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+  
+  .gallery-page .video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  
+  .gallery-page .video-title {
+    margin: 14px 16px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--g-text);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .gallery-page .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-page .section-head {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .gallery-page .container {
+      width: calc(100% - 32px);
+    }
+  
+    .gallery-page .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
