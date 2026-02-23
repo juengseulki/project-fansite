@@ -1,0 +1,139 @@
+body {
+  background-color: #f3f3f3;
+}
+
+.community--border--mainimg {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  text-shadow: 5px 5px 20px gold;
+  font-size: 100px;
+  padding: 100px 10px;
+  border-bottom: 2px solid gold;
+}
+
+.community--main--border {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main--border--list {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.main--border--list thead {
+  background-color: gainsboro;
+}
+
+.main--border--list td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgb(201, 192, 192);
+}
+
+.main--border--list td:nth-child(1) {
+  width: 10%;
+}
+.main--border--list td:nth-child(2) {
+  width: 70%;
+}
+.main--border--list td:nth-child(3) {
+  width: 10%;
+}
+.main--border--list td:nth-child(4) {
+  width: 10%;
+}
+
+.community--searchbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 60px 50px;
+}
+
+.community--searchbar--input {
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid gray;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+}
+
+.community--searchbar--btn {
+  height: 40px;
+  width: 45px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+/**/
+
+.user--border--title {
+  font-size: 24px;
+  border-bottom: 1px solid #c9c5c5;
+}
+
+.community--post-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1280px;
+
+  margin: 40px auto;
+}
+
+.community--user--border,
+.community--user--comment--list {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.community--user--border {
+  border-bottom: 1px solid gray;
+}
+
+.user--border--detail {
+  margin-top: 50px;
+}
+
+.community--user--comment--list td {
+  padding: 3px;
+  text-align: left;
+}
+
+.community--user--comment--list td:nth-child(1) {
+  width: 10%;
+}
+.community--user--comment--list td:nth-child(2) {
+  width: 80%;
+}
+.community--user--comment--list td:nth-child(3) {
+  width: 10%;
+}
+
+.community--comentbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  max-width: 1280px;
+}
+
+.community--comentbar--input {
+  width: 500px;
+  height: 100px;
+}
+
+.community--comentbar--btn {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  color: white;
+}

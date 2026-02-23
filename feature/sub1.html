@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicHigh Community</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/community.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-container"></div>
+    </header>
+    <main>
+      <section>
+        <h1 class="community--border--mainimg">High Skool Community</h1>
+      </section>
+      <section class="community--post-container">
+        <div class="community--user--border">
+          <div class="user--border--title">
+            <h2>진짜 듣고싶은거 녹턴 라이브</h2>
+          </div>
+          <div class="user--border--detail">
+            이건 근데 소극장만 될거라ㅋㅋㅋ<br /><br />
+            어릴 때라 뭅먼 콘 못가서 피해망상 못들은거 슬픈데<br /><br />
+            녹턴 실어증 이런거 듣고싶다<br /><br />
+          </div>
+        </div>
+
+        <div class="community--user--comment">
+          <table class="community--user--comment--list">
+            <tr>
+              <td>E좋아</td>
+              <td>아 ㄹㅇ 녹턴 제발</td>
+              <td>02.21 21:06:36</td>
+            </tr>
+            <tr>
+              <td>ㅇㅇ</td>
+              <td>실어증은 비트깔이 맛잇는 노래라서 가능성 있는데</td>
+              <td>02.22 00:20:13</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="community--comentbar">
+          <input
+            class="community--comentbar--input"
+            placeholder="인터넷은 개인의 것이 아닙니다. 바르고 고운말을 사용해 주세요."
+          />
+          <button class="community--comentbar--btn">등록</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container"></div>
+    </footer>
+  </body>
+  <script>
+    fetch("header.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+</html>
