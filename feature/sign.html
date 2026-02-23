@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | EPIK HIGH ❤ HIGH SKOOL</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <div id="register" class="form-skin">
+      <h2>Sign up</h2>
+
+      <form action="#">
+        <div class="form-data">
+          <div>
+            <label for="mb_email">E-mail</label>
+            <input type="text" name="mb_email" id="mb_email" class="" />
+          </div>
+          <div>
+            <label for="mb_password">Password</label>
+            <input
+              type="password"
+              name="mb_password"
+              id="mb_password"
+              class=""
+            />
+          </div>
+          <div>
+            <label for="mb_nickname">Nickname</label>
+            <input
+              type="password"
+              name="mb_nickname"
+              id="mb_nickname"
+              class=""
+            />
+          </div>
+        </div>
+
+        <!-- <button type="submit">작성완료</button> -->
+        <div class="form-submit">
+          <a href="./login.html" class="btn-primary">Submit</a>
+        </div>
+      </form>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
