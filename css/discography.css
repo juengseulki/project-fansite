@@ -1,0 +1,120 @@
+main {
+  background-color: #f3f3f3;
+  padding: 1px;
+  margin: 1px auto;
+}
+
+h1 {
+  color: #797979;
+  text-align: center;
+  margin-top: 5vw;
+  font-style: italic;
+  font-size: 2.3vw;
+}
+
+.big-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7vw;
+  margin: 5vw 10vw;
+}
+
+.small-box {
+  display: flex;
+  gap: 12vw;
+}
+
+.cd {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+
+  width: 11vw;
+  background: none;
+  border: none;
+}
+
+.cd-player {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.cd-disc {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 1px solid #ccc;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cd-disc:hover {
+  transform: scale(1.1);
+}
+
+.cd-hole {
+  width: 2vw;
+  height: 2vw;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  border: 0.4vw solid #efefef;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cd-name {
+  width: 100%;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+  text-align: center;
+  color: #666;
+}
+
+.cd-disc.album1 {
+  background-image: url("../images/discography/EpickHighIsHere하.png");
+}
+.cd-disc.album2 {
+  background-image: url("../images/discography/EpickHighIsHere상.png");
+}
+.cd-disc.album3 {
+  background-image: url("../images/discography/WeveDone.png");
+}
+.cd-disc.album4 {
+  background-image: url("../images/discography/신발장.png");
+}
+.cd-disc.album5 {
+  background-image: url("../images/discography/99.png");
+}
+.cd-disc.album6 {
+  background-image: url("../images/discography/[e].png");
+}
+.cd-disc.album7 {
+  background-image: url("../images/discography/piecespart1.png");
+}
+.cd-disc.album8 {
+  background-image: url("../images/discography/Remapping.png");
+}
+
+.cd-disc.album9 {
+  background-image: url("../images/discography/SwanSongs.png");
+}
+
+.cd-disc.album10 {
+  background-image: url("../images/discography/HighSociety.png");
+}
+
+.cd-disc.album11 {
+  background-image: url("../images/discography/MapoftheHuman.png");
+}
