@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/css/form.css" />
   </head>
   <body>
+    <div id="header-container"></div>
+
     <div id="login" class="form-skin">
       <h2>로그인</h2>
 
@@ -40,5 +42,21 @@
         <a href="./sign.html" class="btn-primary">회원가입</a>
       </div>
     </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
