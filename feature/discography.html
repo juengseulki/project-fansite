@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/discography.css" />
+  </head>
+  <body>
+    <header><div id="header-container"></div></header>
+    <main>
+      <h1>[ Studio Album ]</h1>
+      <section class="big-box">
+        <section class="small-box">
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('epikhigh-ha.html', 'Epik High Is Here 下')"
+            >
+              <div class="cd-disc album1">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">Epik High Is Here 下</div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('epikhigh-sang.html', 'Epik High Is Here 上')"
+            >
+              <div class="cd-disc album2">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">Epik High Is Here 上</div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="
+                openAlbum('wevedone.html', 'WE’VE DONE SOMETHING WONDERFUL')
+              "
+            >
+              <div class="cd-disc album3">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name" style="font-size: 0.8vw">
+              WE’VE DONE<br />SOMETHING WONDERFUL
+            </div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('신발장.html', '신발장')"
+            >
+              <div class="cd-disc album4">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">신발장</div>
+          </section>
+        </section>
+
+        <section class="small-box">
+          <section class="cd">
+            <button class="cd-player" onclick="openAlbum('99.html', '99')">
+              <div class="cd-disc album5">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">99</div>
+          </section>
+
+          <section class="cd">
+            <button class="cd-player" onclick="openAlbum('e.html', 'e')">
+              <div class="cd-disc album6">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">[e]</div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('Pieces.html', 'Pieces')"
+            >
+              <div class="cd-disc album7">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">Pieces, Part One</div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('Remapping.html', 'Remapping The Human Soul')"
+            >
+              <div class="cd-disc album8">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">Remapping<br />The Human Soul</div>
+          </section>
+        </section>
+
+        <section class="small-box">
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('SwanSongs.html', 'Swan Songs')"
+            >
+              <div class="cd-disc album9">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">Swan Songs</div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('HighSociety.html', 'High Society')"
+            >
+              <div class="cd-disc album10">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">High Society</div>
+          </section>
+
+          <section class="cd">
+            <button
+              class="cd-player"
+              onclick="openAlbum('Mapofthe.html', 'Map of the Human Soul')"
+            >
+              <div class="cd-disc album11">
+                <div class="cd-hole"></div>
+              </div>
+            </button>
+            <div class="cd-name">Map of the<br />Human Soul</div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer><div id="footer-container"></div></footer>
+
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
+
+    <script>
+      function openAlbum(url, title) {
+        const w = 550;
+        const h = 400;
+        const left = 400;
+        const top = 150;
+
+        window.open(
+          url,
+          title,
+          `width=${w},height=${h},left=${left},top=${top}`,
+        );
+      }
+    </script>
+  </body>
+</html>
