@@ -1,0 +1,339 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 20px;
+
+  width: 92%;
+  max-width: 1300px;
+  margin: 20px auto;
+
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(15px);
+
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 0 40px rgba(0,0,0,0.8),
+    0 0 20px rgba(255,255,255,0.05);
+
+  transition: 0.4s ease;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.header:hover {
+  background: rgba(10,10,10,0.95);
+  box-shadow:
+    0 0 60px rgba(0,0,0,1),
+    0 0 30px rgba(0,0,0,0.9);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(225,6,0,0.25) 0%, transparent 70%);
+  top: -200px;
+  left: -200px;
+  opacity: 0;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.header:hover::before {
+  opacity: 1;
+}
+
+/* INNER LAYOUT */
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: clamp(15px, 3vw, 25px) clamp(20px, 5vw, 50px);
+  gap: 20px;
+}
+
+/* LOGO - LED SIGN */
+.logo a {
+  text-decoration: none;
+  font-size: clamp(20px, 2vw, 26px);
+  letter-spacing: 6px;
+  font-weight: 800;
+  color: #fff;
+
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgba(225,6,0,0.6),
+    0 0 40px rgba(225,6,0,0.4);
+
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  5% { opacity: 0.8; }
+  10% { opacity: 1; }
+  20% { opacity: 0.9; }
+  30% { opacity: 1; }
+  100% { opacity: 0.95; }
+}
+
+/* NAV */
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(15px, 3vw, 40px);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: clamp(12px, 1vw, 14px);
+  letter-spacing: 3px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 트랙 라인 */
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+/* AUTH */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* LOGIN */
+.auth .login {
+  position: relative;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.auth .login:hover {
+  color: #fff;
+}
+
+.auth .login::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.auth .login:hover::after {
+  width: 100%;
+}
+
+/* SIGN UP */
+.auth .sign {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.auth .sign:hover {
+  background: #e10600;
+  border-color: #e10600;
+  box-shadow: 0 0 20px rgba(225,6,0,0.7);
+}
+
+/* FOOTER */
+/* =========================
+   FOOTER BASE
+========================= */
+.footer {
+  margin-top: 150px;
+  padding: 100px 0 120px;
+  background: linear-gradient(to top, #000 0%, #111 100%);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(225,6,0,0.18) 0%, transparent 70%);
+  bottom: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: glowMove 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes glowMove {
+  from { opacity: 0.3; }
+  to   { opacity: 0.6; }
+}
+
+/* INNER */
+.footer-inner {
+  width: 92%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* THANK YOU */
+.footer-thanks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: clamp(60px, 10vw, 160px);
+  font-weight: 900;
+  letter-spacing: 8px;
+
+  color: rgba(255,255,255,0.03);
+  white-space: nowrap;
+
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* COPY */
+.footer-copy {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+/* MENU */
+.footer-menu {
+  list-style: none;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #aaa;
+  letter-spacing: 3px;
+  font-size: 13px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #fff;
+}
+
+.footer-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.footer-menu a:hover::after {
+  width: 100%;
+}
+
+/* SNS */
+.footer-sns {
+  position: relative;
+  z-index: 10;
+}
+
+.sns-list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.sns-list img {
+  width: 26px;
+  opacity: 0.85;
+  filter: invert(1) brightness(1.3);
+  transition: all 0.25s ease;
+}
+
+.sns-list a:hover img {
+  transform: translateY(-5px) scale(1.15);
+  opacity: 1;
+  filter:
+    invert(1)
+    brightness(1.6)
+    drop-shadow(0 0 8px rgba(225,6,0,0.8))
+    drop-shadow(0 0 18px rgba(225,6,0,0.6));
+}
+
+.sns-list a:active img {
+  transform: scale(1.25);
+  filter:
+    invert(1)
+    brightness(1.8)
+    drop-shadow(0 0 12px rgba(225,6,0,1))
+    drop-shadow(0 0 25px rgba(225,6,0,0.9));
+}
+
+@keyframes iconBreath {
+  from { opacity: 0.75; }
+  to   { opacity: 0.95; }
+}
+
+.sns-list img {
+  animation: iconBreath 2.5s ease-in-out infinite alternate;
+}
