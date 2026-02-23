@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicHigh Community</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/community.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-container"></div>
+    </header>
+    <main>
+      <section>
+        <h1 class="community--border--mainimg">High Skool Community</h1>
+      </section>
+      <section class="community--post-container">
+        <div class="community--user--border">
+          <div class="user--border--title">
+            <h2>5집 진짜 goat네</h2>
+          </div>
+          <div class="user--border--detail">
+            <br /><br />Ignition 연필깎이 비트가 진짜 미쳤다.<br /><br /><br />
+          </div>
+        </div>
+
+        <div class="community--user--comment">
+          <table class="community--user--comment--list">
+            <tr>
+              <td>머쓰마</td>
+              <td>연필깎이 콘서트 버전 편곡 개좋음 유튭에서 들어보삼</td>
+              <td>02.14 11:11:04삭제</td>
+            </tr>
+            <tr>
+              <td>아아아아</td>
+              <td>지리긴함</td>
+              <td>02.14 13:28:46</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="community--comentbar">
+          <input
+            class="community--comentbar--input"
+            placeholder="인터넷은 개인의 것이 아닙니다. 바르고 고운말을 사용해 주세요."
+          />
+          <button class="community--comentbar--btn">등록</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container"></div>
+    </footer>
+  </body>
+  <script>
+    fetch("header.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+</html>

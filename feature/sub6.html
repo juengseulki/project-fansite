@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicHigh Community</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/community.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-container"></div>
+    </header>
+    <main>
+      <section>
+        <h1 class="community--border--mainimg">High Skool Community</h1>
+      </section>
+      <section class="community--post-container">
+        <div class="community--user--border">
+          <div class="user--border--title">
+            <h2>빈차 가사 리뷰</h2>
+          </div>
+          <div class="user--border--detail">
+            <br /><br />직장인 되고 최애곡이 빈차였는데 이런 리뷰 신선하다
+            알고리즘 땡큐<br /><br />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_UHS1B5W0-c?si=36hbD6hX_zIRha1N"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <br />
+            <a href="https://youtu.be/_UHS1B5W0-c?si=varu1g87EjAog5zP">
+              https://youtu.be/_UHS1B5W0-c?si=varu1g87EjAog5zP
+            </a>
+            <br /><br /><br />
+          </div>
+        </div>
+
+        <div class="community--user--comment">
+          <table class="community--user--comment--list">
+            <tr>
+              <td>나그네</td>
+              <td>시인이라 그런지 뭔가 평가가 신선하네</td>
+              <td>02.10 16:12:30</td>
+            </tr>
+            <tr>
+              <td>무르</td>
+              <td>확실히 에픽하이가 가사에 담는 깊이가 다름 ㄹㅇ;;</td>
+              <td>02.10 18:02:19</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="community--comentbar">
+          <input
+            class="community--comentbar--input"
+            placeholder="인터넷은 개인의 것이 아닙니다. 바르고 고운말을 사용해 주세요."
+          />
+          <button class="community--comentbar--btn">등록</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container"></div>
+    </footer>
+  </body>
+  <script>
+    fetch("header.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+</html>
