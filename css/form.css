@@ -24,6 +24,10 @@ body:has(.form-skin) {
   width: 100%;
 }
 
+.form-data div:not(:first-child) {
+  margin-top: 10px;
+}
+
 .form-skin label {
   display: block;
   margin-bottom: 5px;
