@@ -4,11 +4,6 @@
   --primary-color: #eeebeb;
 }
 
-html:has(.form-skin),
-body:has(.form-skin) {
-  height: 100%;
-}
-
 .form-skin {
   display: flex;
   flex-direction: column;
@@ -16,7 +11,7 @@ body:has(.form-skin) {
   align-items: center;
   gap: 50px;
   width: min(100%, 320px);
-  height: 100%;
+  margin-block: 100px;
   margin-inline: auto;
 }
 
