@@ -39,14 +39,14 @@ body.gallery-page {
 .gallery-page .page-title {
   font-size: 42px;
   font-weight: 850;
-  letter-spacing: -0.04em;
+  letter-spacing: -1.7px;
   line-height: 1.1;
 }
 
 .gallery-page .page-desc {
   margin-top: 10px;
   font-size: 14px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.3px;
   color: var(--g-muted);
 }
 
@@ -70,12 +70,12 @@ body.gallery-page {
 .gallery-page .section-title {
   font-size: 20px;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.4px;
 }
 
 .gallery-page .section-sub {
   font-size: 13px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1px;
   color: var(--g-muted);
 }
 
@@ -195,7 +195,7 @@ body.gallery-page {
   margin: 14px 16px 18px;
   font-size: 15px;
   font-weight: 780;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.3px;
   color: var(--g-text);
 }
 
