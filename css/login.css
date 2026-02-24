@@ -5,6 +5,10 @@
   --base-color: #f3f3f3;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--base-color);
 }
@@ -85,4 +89,26 @@ body {
 
 #yetMember p {
   margin-bottom: 10px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.3);
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 55px;
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.top-btn:hover {
+  background-color: #ff2e63;
+  translate: 0 -5px;
 }
