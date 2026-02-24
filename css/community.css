@@ -119,8 +119,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 80%;
-  max-width: 1280px;
 }
 
 .community--comentbar--input {
