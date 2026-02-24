@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicHigh Community</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/community.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/community.css" />
   </head>
   <body>
     <header>
@@ -19,26 +19,30 @@
       <section class="community--post-container">
         <div class="community--user--border">
           <div class="user--border--title">
-            <h2>진짜 듣고싶은거 녹턴 라이브</h2>
+            <h2>love love love 노래방 힙합 순위</h2>
           </div>
           <div class="user--border--detail">
-            이건 근데 소극장만 될거라ㅋㅋㅋ<br /><br />
-            어릴 때라 뭅먼 콘 못가서 피해망상 못들은거 슬픈데<br /><br />
-            녹턴 실어증 이런거 듣고싶다<br /><br />
+            <img src="/images/community/love.jpg" />
+            <br /><br />2위 <br /><br /><br />
           </div>
         </div>
 
         <div class="community--user--comment">
           <table class="community--user--comment--list">
             <tr>
-              <td>E좋아</td>
-              <td>아 ㄹㅇ 녹턴 제발</td>
-              <td>02.21 21:06:36</td>
+              <td>가나다</td>
+              <td>붕붕 옛날 노래도 아닌데 아직도 저순위네</td>
+              <td>02.10 16:12:30</td>
             </tr>
             <tr>
-              <td>ㅇㅇ</td>
-              <td>실어증은 비트깔이 맛잇는 노래라서 가능성 있는데</td>
-              <td>02.22 00:20:13</td>
+              <td>머쓰마</td>
+              <td>쇼 미에 김하온 나와서 순위높은건가</td>
+              <td>02.10 18:02:19</td>
+            </tr>
+            <tr>
+              <td>E펜</td>
+              <td>노래방에서는 다듀가 짱이긴하구나</td>
+              <td>02.10 18:07:11</td>
             </tr>
           </table>
         </div>
@@ -58,13 +62,13 @@
     </footer>
   </body>
   <script>
-    fetch("header.html")
+    fetch("/feature/header.html")
       .then((res) => res.text())
       .then((data) => {
         document.getElementById("header-container").innerHTML = data;
       });
 
-    fetch("footer.html")
+    fetch("/feature/footer.html")
       .then((res) => res.text())
       .then((data) => {
         document.getElementById("footer-container").innerHTML = data;

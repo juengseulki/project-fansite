@@ -9,13 +9,18 @@ body {
   background-color: var(--base-color);
 }
 
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
 .form-skin {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: min(100%, 320px);
-  margin-block: 100px;
   margin-inline: auto;
 }
 

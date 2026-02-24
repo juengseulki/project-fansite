@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicHigh Community</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/community.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/community.css" />
   </head>
   <body>
     <header>
@@ -72,13 +72,13 @@
     </footer>
   </body>
   <script>
-    fetch("header.html")
+    fetch("/feature/header.html")
       .then((res) => res.text())
       .then((data) => {
         document.getElementById("header-container").innerHTML = data;
       });
 
-    fetch("footer.html")
+    fetch("/feature/footer.html")
       .then((res) => res.text())
       .then((data) => {
         document.getElementById("footer-container").innerHTML = data;

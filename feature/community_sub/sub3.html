@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicHigh Community</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/community.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/community.css" />
   </head>
   <body>
     <header>
@@ -19,30 +19,24 @@
       <section class="community--post-container">
         <div class="community--user--border">
           <div class="user--border--title">
-            <h2>love love love 노래방 힙합 순위</h2>
+            <h2>5집 진짜 goat네</h2>
           </div>
           <div class="user--border--detail">
-            <img src="/images/community/love.jpg" />
-            <br /><br />2위 <br /><br /><br />
+            <br /><br />Ignition 연필깎이 비트가 진짜 미쳤다.<br /><br /><br />
           </div>
         </div>
 
         <div class="community--user--comment">
           <table class="community--user--comment--list">
             <tr>
-              <td>가나다</td>
-              <td>붕붕 옛날 노래도 아닌데 아직도 저순위네</td>
-              <td>02.10 16:12:30</td>
-            </tr>
-            <tr>
               <td>머쓰마</td>
-              <td>쇼 미에 김하온 나와서 순위높은건가</td>
-              <td>02.10 18:02:19</td>
+              <td>연필깎이 콘서트 버전 편곡 개좋음 유튭에서 들어보삼</td>
+              <td>02.14 11:11:04삭제</td>
             </tr>
             <tr>
-              <td>E펜</td>
-              <td>노래방에서는 다듀가 짱이긴하구나</td>
-              <td>02.10 18:07:11</td>
+              <td>아아아아</td>
+              <td>지리긴함</td>
+              <td>02.14 13:28:46</td>
             </tr>
           </table>
         </div>
@@ -62,13 +56,13 @@
     </footer>
   </body>
   <script>
-    fetch("header.html")
+    fetch("/feature/header.html")
       .then((res) => res.text())
       .then((data) => {
         document.getElementById("header-container").innerHTML = data;
       });
 
-    fetch("footer.html")
+    fetch("/feature/footer.html")
       .then((res) => res.text())
       .then((data) => {
         document.getElementById("footer-container").innerHTML = data;
