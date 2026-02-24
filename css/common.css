@@ -8,14 +8,21 @@ body::before {
   z-index: 0;
 }
 
+#header-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 /* HEADER */
 .header {
-  position: sticky;
-  top: 20px;
+  position: relative;
 
   width: 92%;
   max-width: 1300px;
-  margin: 20px auto;
+  margin: 0 auto;
 
   background: rgba(20,20,20,0.85);
   backdrop-filter: blur(15px);
@@ -187,9 +194,6 @@ body::before {
 }
 
 /* FOOTER */
-/* =========================
-   FOOTER BASE
-========================= */
 .footer {
   margin-top: 150px;
   padding: 100px 0 120px;
