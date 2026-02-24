@@ -16,7 +16,7 @@ body {
 .main {
   width: min(100%, 1200px);
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 .form-skin {
