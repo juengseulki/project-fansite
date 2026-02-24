@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIK HIGH - Concert Schedule</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+</head>
+<body bgcolor="#f3f3f3" style="margin: 0; padding: 0;">
+
+    <div id="header-container"></div>
+
+    <div align="center">
+        <main style="max-width: 1200px;">
+            <br><br><br>
+            <h2 style="font-weight: bold; color: #888888; letter-spacing: 2px; margin: 0;">
+                <i>[ Concert Schedule ]</i>
+            </h2>
+            <br><br>
+
+            <table border="0" align="center" width="85%" cellpadding="20" cellspacing="0" 
+                   style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); overflow: hidden; table-layout: fixed;">
+                <thead>
+                    <tr style="background-color: #fafafa;">
+                        <th align="left" style="color: #333; border-bottom: 2px solid #f3f3f3; font-size: 14px; width: 25%;">장소</th>
+                        <th align="left" style="color: #333; border-bottom: 2px solid #f3f3f3; font-size: 14px; width: 25%;">날짜</th>
+                        <th align="left" style="color: #333; border-bottom: 2px solid #f3f3f3; font-size: 14px; width: 20%;">시간</th>
+                        <th align="left" style="color: #333; border-bottom: 2px solid #f3f3f3; font-size: 14px; width: 30%;">공연 정보</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border-bottom: 1px solid #f3f3f3;">서강대학교 메리홀</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">2024.08.16 ~ 08.25</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">금 20:00 / 토 18:00 / 일 17:00</td>
+                        <td style="border-bottom: 1px solid #f3f3f3; color: #666;">에픽하이 소극장 콘서트 '현재상영중 2024'</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #f3f3f3;">올림픽공원 핸드볼경기장</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">2023.12.15 ~ 12.17</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">금 20:00 / 토 18:00 / 일 17:00</td>
+                        <td style="border-bottom: 1px solid #f3f3f3; color: #666;">EPIK HIGH 20th ANNIVERSARY CONCERT</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #f3f3f3;">아시아, 유럽, 북미 투어</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">2023.02.06 ~ 04.14</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">현지 시간 기준</td>
+                        <td style="border-bottom: 1px solid #f3f3f3; color: #666;">ALL TIME HIGH TOUR</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #f3f3f3;">올림픽공원 올림픽홀</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">2021.12.17 ~ 12.19</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">금 20:00 / 토 18:00 / 일 17:00</td>
+                        <td style="border-bottom: 1px solid #f3f3f3; color: #666;">EPIK HIGH IS HERE</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #f3f3f3;">블루스퀘어 아이마켓홀</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">2017.11.03 ~ 11.04</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">금 20:00 / 토 19:00</td>
+                        <td style="border-bottom: 1px solid #f3f3f3; color: #666;">WE'VE DONE SOMETHING WONDERFUL</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #f3f3f3;">올림픽공원 올림픽홀</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">2015.12.05 ~ 12.12</td>
+                        <td style="border-bottom: 1px solid #f3f3f3;">토 19:00 / 일 18:00</td>
+                        <td style="border-bottom: 1px solid #f3f3f3; color: #666;">연말 콘서트 '전설의 3인조'</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br><br>
+        </main>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer-container").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
