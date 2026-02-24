@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/community.css" />
   </head>
-  <body>
+  <body id="top">
     <header>
       <div id="header-container"></div>
     </header>
     <main>
       <section>
-        <h1 class="community--border--mainimg">High Skool Community</h1>
+        <h1 class="community--board--mainimg">High Skool Community</h1>
       </section>
       <section>
-        <div class="community--main--border">
-          <table class="main--border--list">
+        <div class="community--main--board">
+          <table class="main--board--list">
             <thead>
               <tr>
                 <td>번호</td>
@@ -86,8 +86,14 @@
       </section>
       <section>
         <div class="community--board--btn">
-          <input type="button" class="community--writing--btn" value="글쓰기" />
-          <a href="fan-letter.html">
+          <a href="/feature/community-writing.html">
+            <input
+              type="button"
+              class="community--writing--btn"
+              value="글쓰기"
+            />
+          </a>
+          <a href="/feature/fan-letter.html">
             <input
               type="button"
               class="community--fanletter--btn"
@@ -109,6 +115,7 @@
     <footer>
       <div id="footer-container"></div>
     </footer>
+    <a href="#top" class="top-btn">↑</a>
   </body>
   <script>
     fetch("header.html")
