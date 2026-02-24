@@ -5,7 +5,7 @@
   color: white;
   text-shadow: 5px 5px 20px silver;
   font-size: 100px;
-  padding: 150px 10px 50px 10px;
+  padding: 80px 10px;
   border-bottom: 2px solid red;
 }
 
@@ -30,7 +30,7 @@
   margin-bottom: 10px;
 }
 
-.input-group {
+.input--group {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -51,7 +51,7 @@
   font-size: 20px;
 }
 
-form[name="send--fan--letter"] {
+.fan-letter--form {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
@@ -61,16 +61,16 @@ form[name="send--fan--letter"] {
   gap: 15px;
 }
 
-form[name="send--fan--letter"] input[type="text"],
-form[name="send--fan--letter"] input[type="email"] {
+.fanform--input--name,
+.fanform--input--email {
   border-radius: 5px;
   border: 1px solid gray;
   width: 40%;
   height: 30px;
 }
 
-form[name="send--fan--letter"] input::placeholder,
-form[name="send--fan--letter"] textarea::placeholder {
+.fanform--input--name::placeholder,
+.fanform--input--email::placeholder {
   text-indent: 5px;
 }
 
@@ -81,7 +81,7 @@ form[name="send--fan--letter"] textarea {
   border: 1px solid gray;
 }
 
-form[name="send--fan--letter"] input[type="submit"] {
+.fanletter--upload {
   background-color: #ff0000;
   color: white;
   padding: 10px 20px;
@@ -91,11 +91,11 @@ form[name="send--fan--letter"] input[type="submit"] {
   align-self: flex-end;
 }
 
-form[name="send--fan--letter"] input[type="submit"]:hover {
+.fanletter--upload:hover {
   background-color: #ff5f5f;
 }
 
-.custom-file-upload {
+.custom--file--upload {
   display: inline-block;
   padding: 10px 20px;
   background-color: #333;
@@ -105,6 +105,6 @@ form[name="send--fan--letter"] input[type="submit"]:hover {
   text-align: center;
 }
 
-.custom-file-upload:hover {
+.custom--file--upload:hover {
   background-color: #555;
 }

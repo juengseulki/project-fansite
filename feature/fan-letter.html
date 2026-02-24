@@ -17,14 +17,14 @@
         <h1 class="community--border--mainimg">High Skool Fan-letter</h1>
       </section>
       <section>
-        <div>
+        <div class="fan-letter--form">
           <form name="send--fan--letter">
             <p class="fan--form--title">보낼 사람</p>
 
             <div class="fanletter--selection-container">
               <label class="fanletter--item">
                 <img src="/images/community/타블로.png" alt="타블로" />
-                <div class="input-group">
+                <div class="input--group">
                   <input
                     type="checkbox"
                     name="receiver"
@@ -37,7 +37,7 @@
 
               <label class="fanletter--item">
                 <img src="/images/community/투컷.png" alt="투컷" />
-                <div class="input-group">
+                <div class="input--group">
                   <input
                     type="checkbox"
                     name="receiver"
@@ -50,7 +50,7 @@
 
               <label class="fanletter--item">
                 <img src="/images/community/미쓰라.png" alt="미쓰라" />
-                <div class="input-group">
+                <div class="input--group">
                   <input
                     type="checkbox"
                     name="receiver"
@@ -64,10 +64,18 @@
 
             <div class="fan--form--inputs">
               <p>이름</p>
-              <input type="text" placeholder="이름을 입력해주세요" />
+              <input
+                type="text"
+                class="fanform--input--name"
+                placeholder="이름을 입력해주세요"
+              />
 
               <p>이메일</p>
-              <input type="email" placeholder="이메일을 입력해주세요" />
+              <input
+                type="email"
+                class="fanform--input--email"
+                placeholder="이메일을 입력해주세요"
+              />
 
               <p>메시지</p>
               <textarea placeholder="전달할 말을 입력해주세요"></textarea>
@@ -75,12 +83,13 @@
               <br />
               <input type="file" id="fan-photo" style="display: none" />
 
-              <label for="fan-photo" class="custom-file-upload">
+              <label for="fan--photo" class="custom--file--upload">
                 이미지 업로드
               </label>
               <input
                 type="submit"
                 value="팬레터 보내기"
+                class="fanletter--upload"
                 onclick="alert('팬레터가 성공적으로 전송되었습니다!');"
               />
             </div>
