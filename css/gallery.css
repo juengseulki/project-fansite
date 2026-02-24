@@ -44,7 +44,8 @@ body.gallery-page {
 }
 
 .gallery-page .page-desc {
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-left: 5px;
   font-size: 14px;
   letter-spacing: 0.3px;
   color: var(--g-muted);
