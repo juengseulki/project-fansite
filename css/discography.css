@@ -1,15 +1,15 @@
 main {
   background-color: #f3f3f3;
-  padding: 1px;
-  margin: 0.1vw;
+  padding: 50px 1px 1px 1px;
+  margin: 0.1rem;
 }
 
 h3 {
   color: #797979;
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 10rem;
   font-style: italic;
-  font-size: 2.3vw;
+  font-size: 2.3rem;
 }
 
 .big-box {
@@ -17,23 +17,23 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 7vw;
-  margin: 5vw 10vw;
+  gap: 7rem;
+  margin: 5rem 10rem;
 }
 
 .small-box {
   display: flex;
-  gap: 12vw;
+  gap: 9rem;
 }
 
 .cd {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
 
-  width: 11vw;
+  width: 11rem;
   background: none;
   border: none;
 }
@@ -45,8 +45,8 @@ h3 {
 }
 
 .cd-disc {
-  width: 11vw;
-  height: 11vw;
+  width: 11rem;
+  height: 11rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -65,17 +65,17 @@ h3 {
 }
 
 .cd-hole {
-  width: 2vw;
-  height: 2vw;
+  width: 2rem;
+  height: 2rem;
   background-color: #f3f3f3;
   border-radius: 50%;
-  border: 0.4vw solid #efefef;
+  border: 0.4rem solid #efefef;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .cd-name {
   width: 100%;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", sans-serif;
   text-align: center;
