@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  width: 1200px;
+  width: min(100%, 1200px);
   margin: 0 auto;
   padding: 200px 0;
 }
