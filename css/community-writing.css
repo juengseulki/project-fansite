@@ -2,60 +2,28 @@ html {
   scroll-behavior: smooth;
 }
 
-.community--board--mainimg {
+.community--write--mainimg {
   display: flex;
   justify-content: center;
   background-color: black;
   color: white;
-  text-shadow: 5px 5px 20px silver;
+  text-shadow: 5px 5px 20px blueviolet;
   font-size: 100px;
   padding: 80px 10px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid blue;
 }
 
-.fanletter--selection-container {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1280px;
-}
-
-.fanletter--item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.fanletter--item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.input--group {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.fan--form--title {
-  font-size: 35px;
-  font-weight: 600;
-}
-
-.fan--form--inputs {
+.community--form--inputs {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.fan--form--inputs p {
-  font-size: 20px;
+.community--form--inputs p {
+  font-size: 30px;
 }
 
-.fan-letter--form {
+.community--form {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
@@ -65,28 +33,26 @@ html {
   gap: 15px;
 }
 
-.fanform--input--name,
-.fanform--input--email {
+.writing--input--name {
   border-radius: 5px;
   border: 1px solid gray;
-  width: 40%;
+  width: 100%;
   height: 30px;
 }
 
-.fanform--input--name::placeholder,
-.fanform--input--email::placeholder,
-.fanform--input--text::placeholder {
+.writing--input--name::placeholder,
+.writing--input--text::placeholder {
   text-indent: 10px;
 }
 
-.fanform--input--text {
+.writing--input--text {
   width: 100%;
   height: 300px;
   border-radius: 5px;
   border: 1px solid gray;
 }
 
-.fanletter--upload {
+.community--upload {
   background-color: #ff0000;
   color: white;
   padding: 10px 20px;
@@ -96,11 +62,11 @@ html {
   align-self: flex-end;
 }
 
-.fanletter--upload:hover {
+.community--upload:hover {
   background-color: #ff5f5f;
 }
 
-.custom--file--upload {
+.community--file--upload {
   display: inline-block;
   padding: 10px 20px;
   background-color: #333;
@@ -110,7 +76,7 @@ html {
   text-align: center;
 }
 
-.custom--file--upload:hover {
+.community--file--upload:hover {
   background-color: #555;
 }
 

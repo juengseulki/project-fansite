@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPIK HIGH | Community Write</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/community-writing.css" />
+  </head>
+  <body id="top">
+    <header>
+      <div id="header-container"></div>
+    </header>
+    <main>
+      <section>
+        <h1 class="community--write--mainimg">High Skool Community</h1>
+      </section>
+      <section>
+        <div class="community--form">
+          <form name="send--fan--letter">
+            <div class="fanletter--selection-container"></div>
+
+            <div class="community--form--inputs">
+              <p>제목</p>
+              <input
+                type="text"
+                class="writing--input--name"
+                placeholder="제목을 입력해주세요"
+              />
+              <p>내용</p>
+              <textarea
+                class="writing--input--text"
+                placeholder="타인을 비방하거나 문제삼는 글은 언제든 삭제 될 수 있습니다."
+              ></textarea>
+
+              <br />
+              <input type="file" id="community-photo" style="display: none" />
+
+              <label for="community--photo" class="community--file--upload">
+                이미지 업로드
+              </label>
+              <input
+                type="button"
+                value="글쓰기"
+                class="community--upload"
+                onclick="location.href='community.html'"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container"></div>
+    </footer>
+    <a href="#top" class="top-btn">↑</a>
+  </body>
+  <script>
+    fetch("header.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+</html>
