@@ -7,10 +7,10 @@ html {
   justify-content: center;
   background-color: black;
   color: white;
-  text-shadow: 5px 5px 20px silver;
+  text-shadow: 5px 5px 20px #ff499e;
   font-size: 100px;
   padding: 80px 10px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #49b6ff;
 }
 
 .fanletter--selection-container {
