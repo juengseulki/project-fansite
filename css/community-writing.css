@@ -7,10 +7,10 @@ html {
   justify-content: center;
   background-color: black;
   color: white;
-  text-shadow: 5px 5px 20px blueviolet;
+  text-shadow: 5px 5px 20px #73d2de;
   font-size: 100px;
   padding: 80px 10px;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #fbb13c;
 }
 
 .community--form--inputs {
